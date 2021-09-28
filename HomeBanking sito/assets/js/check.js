@@ -165,7 +165,7 @@ function checkPassword() {
 function checkConfirmPassowrd() {
     var check=true;
 	var password = document.getElementById("password").value;
-    var confirm_password = document.getElementById	("confirm_password").value;
+    var confirm_password = document.getElementById("confirm_password").value;
 	if (confirm_password != password) {
 		check=false;
 		document.getElementById("error_confirm_password").innerHTML = "Le password non corrispondono.";
