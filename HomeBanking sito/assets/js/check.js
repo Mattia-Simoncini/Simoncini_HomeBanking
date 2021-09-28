@@ -66,10 +66,8 @@ function checkDateOfBirth() {
 		check=false;
 		if ((date_of_birth == "") || (date_of_birth == "undefined")) {
 			document.getElementById("error_date_of_birth").innerHTML = "La data di nascita risulta essere vuota.";
-		} else if (!regex_date_of_birth.test(inverseDate)){
-			document.getElementById("error_date_of_birth").innerHTML = "La data di nascita risulta non essere valida.";
 		} else {
-			document.getElementById("error_date_of_birth").innerHTML = "La lunghezza della data risulta non essere valida.";
+			document.getElementById("error_date_of_birth").innerHTML = "La data di nascita risulta non essere valida.";
 		}
 	} else {
 		document.getElementById("error_date_of_birth").innerHTML = "";
