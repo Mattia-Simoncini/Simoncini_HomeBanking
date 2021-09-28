@@ -60,17 +60,14 @@ function inversedate(date_of_birth) {
 function checkDateOfBirth() {
     var check=true;
     var date_of_birth = document.getElementById("date_of_birth").value;
-	console.log(date_of_birth.lenght);
 	const regex_date_of_birth = new RegExp(/^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/);
 	var inverseDate = inversedate(date_of_birth);
-	if ((date_of_birth == "") || (date_of_birth == "undefined") || (date_of_birth.length!=10) || (regex_date_of_birth.test(inverseDate))) {
+	if ((date_of_birth == "") || (date_of_birth == "undefined") || (regex_date_of_birth.test(inverseDate))) {
 		check=false;
 		if ((date_of_birth == "") || (date_of_birth == "undefined")) {
 			document.getElementById("error_date_of_birth").innerHTML = "La data di nascita risulta essere vuota.";
-		} else if (!regex_date_of_birth.test(inverseDate)) {
-			document.getElementById("error_date_of_birth").innerHTML = "La data di nascita risulta non essere valida.";
 		} else {
-			document.getElementById("error_date_of_birth").innerHTML = "lunghezza sbagliata";
+			document.getElementById("error_date_of_birth").innerHTML = "La data di nascita risulta non essere valida.";
 		}
 	} else {
 		document.getElementById("error_date_of_birth").innerHTML = "";
@@ -83,7 +80,7 @@ function checkBirthPlace() {
     var birth_place = document.getElementById("birth_place").value;
     const regex_num = new RegExp(/^([^0-9]*)$/);
 	const regex_special_character = new RegExp(/[^A-Za-z0-9]$/);
-	if ((birth_place == "") || (birth_place == "undefined") || (!regex_num.test(birth_place)) || (!regex_special_character.test(birth_place))) {
+	if ((birth_place == "") || (birth_place == "undefined") || (!regex_num.test(birth_place)) || (regex_special_character.test(birth_place))) {
         if ((birth_place == "") || (birth_place == "undefined")) {
             document.getElementById("error_birth_place").innerHTML = "Il comune di nascita risulta essere vuoto.";
         } else if (!regex_num.test(birth_place)){
