@@ -205,7 +205,7 @@ function checkLogIn() {
 }
 
 function redirectLogIn() {
-	//document.getElementById("button_login").type= "submit";
+	document.getElementById("buttonLogin").type= "submit";
 } 
 
 function checkRecoveryPassword() {
@@ -215,7 +215,7 @@ function checkRecoveryPassword() {
 }
 
 function redirectRecoveryPassword() {
-	//document.getElementById("button_login").type= "submit";
+	document.getElementById("buttonPasswordRecovery").type= "submit";
 } 
 
 function checkOperation() {
