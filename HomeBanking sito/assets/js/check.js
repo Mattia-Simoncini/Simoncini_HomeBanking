@@ -14,7 +14,6 @@ function setDate() {
 function checkName() {
     var check=true;
     var name = document.getElementById("name").value;
-	console.log(name);
 	const regex_num = new RegExp(/^([^0-9]*)$/);
 	const regex_special_character = new RegExp(/[^A-Za-z0-9]$/);
 	if ((name == "") || (name == "undefined") || (!regex_num.test(name)) || (regex_special_character.test(name))) {
