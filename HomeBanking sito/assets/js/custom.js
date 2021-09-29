@@ -10,3 +10,7 @@ $(document).ready(function () {
         }
     });
 });
+
+function enableEdit(x) {
+    document.getElementById("buttonEdit"+x).disabled = false;
+}
