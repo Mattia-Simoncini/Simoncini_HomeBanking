@@ -12,5 +12,5 @@ $(document).ready(function () {
 });
 
 function enableEdit(x) {
-    document.getElementById("input"+x).removeAttribute("disabled");
+    document.getElementById(x).removeAttribute("disabled");
 }
