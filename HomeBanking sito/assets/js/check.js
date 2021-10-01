@@ -234,3 +234,21 @@ function checkOperation() {
 		document.getElementById("button-form").type = "submit";
 	}
 }
+
+function checkEditTelephoneNumber() {
+	if(checkTelephoneNumber()) {
+		document.getElementById("buttonEditTelephoneNumber").type = "submit";
+	}
+}
+
+function checkEditEmail() {
+	if(checkEmail()) {
+		document.getElementById("buttonEditEmail").type = "submit";
+	}
+}
+
+function checkEditPassword() {
+	if(checkPassword()) {
+		document.getElementById("buttonEditPassoword").type = "submit";
+	}
+}
