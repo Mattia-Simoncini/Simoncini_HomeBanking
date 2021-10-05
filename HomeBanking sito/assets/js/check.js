@@ -114,6 +114,7 @@ function checkTaxID() {
 function checkTelephoneNumber() {
     var check=true;
     var telephone_number = document.getElementById("telephone_number").value;
+	alert(telephone_number);
 	const regex_telephone_number = new RegExp(/^\+[1-9]{1}[0-9]{3,14}$/);
 	if ((telephone_number == "") || (telephone_number == "undefined") || (!regex_telephone_number.test(telephone_number))) {
 		check=false;
