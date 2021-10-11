@@ -99,3 +99,7 @@
 .table thead {
   border-bottom: 1px solid #eeeeee;
 }
+
+[data-visbile="false"] {
+  display: none;
+}
