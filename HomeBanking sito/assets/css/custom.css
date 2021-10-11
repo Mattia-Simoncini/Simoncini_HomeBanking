@@ -100,6 +100,6 @@
   border-bottom: 1px solid #eeeeee;
 }
 
-div[data-visbile="false"] {
+div[data-visible="false"] {
   display: none;
 }
