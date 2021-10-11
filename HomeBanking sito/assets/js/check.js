@@ -252,3 +252,14 @@ function checkEditPassword() {
 		document.getElementById("buttonEditPassoword").type = "submit";
 	}
 }
+
+function checkVisibleTable() {
+        var bank_account = document.getElementById("bank_account");
+	var credit_card = document.getElementById("credit_card");
+	if (!bank_account.checked) {
+		document.getElementById('tableBankAccount').classList.add('d-none'); 
+	}
+	if (!credit_card.checked) {
+		document.getElementById('tableCreditCard').classList.add('d-none'); 
+	}
+}
