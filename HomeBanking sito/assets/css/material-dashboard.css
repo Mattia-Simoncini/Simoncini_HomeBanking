@@ -9327,7 +9327,7 @@ button.bg-dark:focus {
 
 .text-primary {
   color: #2196f3 !important;
-  position: sticky;
+  position: sticky !important;
 }
 
 a.text-primary:hover,
