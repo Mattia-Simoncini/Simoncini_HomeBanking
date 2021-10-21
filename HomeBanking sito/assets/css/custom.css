@@ -108,3 +108,7 @@
    max-height: 35vh;
   overflow: auto;
 }
+.sticky-header{
+  z-index: 1;
+  background-color: white;
+}
