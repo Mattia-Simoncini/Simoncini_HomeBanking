@@ -103,3 +103,8 @@
 [data-visible="false"] {
   display: none;
 }
+
+.body-scrool{
+   max-height: 50vh;
+  overflow: auto;
+}
