@@ -9325,7 +9325,7 @@ button.bg-dark:focus {
   color: #fff !important;
 }
 
-.text-primary {
+.text-primary th{
   color: #2196f3 !important;
   position: sticky !important;
   top: 0 !important;
