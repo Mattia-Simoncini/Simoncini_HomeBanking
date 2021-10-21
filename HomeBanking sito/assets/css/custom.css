@@ -105,6 +105,6 @@
 }
 
 .body-scrool{
-   max-height: 40 vh;
+   max-height: 30 vh;
   overflow: auto;
 }
