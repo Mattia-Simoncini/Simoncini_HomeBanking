@@ -104,7 +104,7 @@
   display: none;
 }
 
-.body-scrool{
+.body-scroll{
    max-height: 30vh;
   overflow: auto;
 }
