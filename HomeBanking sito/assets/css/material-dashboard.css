@@ -1,3 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="FileXSD.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<catenaMontuosa>
+    <monte>
+        <nome>Monte Bianco</nome>
+        <regione>Valle d'Aosta</regione>
+        <altezza unitaMisura="metri">4810</altezza>
+    </monte>
+    <monte>
+        <nome>Gransasso</nome>
+        <regione>Abruzzo</regione>
+        <altezza unitaMisura="metri">2912</altezza>
+    </monte>
+</catenaMontuosa>
+
 /* Simoncini Mattia */
 
 .card {
@@ -1500,7 +1515,7 @@ pre code {
 
   .col-md-4 {
     flex: 0 0 100%;
-    max-width: 60%;
+    max-width: 33.33333333%;
   }
 
   .col-md-5 {
