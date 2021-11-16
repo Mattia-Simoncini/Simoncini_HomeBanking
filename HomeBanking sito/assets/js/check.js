@@ -116,7 +116,7 @@ function checkTelephoneNumber() {
     var telephone_number = document.getElementById("telephone_number").value;
     var prefix_telephone_number = document.getElementById("prefix_telephone_number").value;
     var complete_telephone_number = prefix_telephone_number+telephone_number;
-	const regex_telephone_number = new RegExp(/^\+[1-9]{1}[0-9]{3,14}$/);
+	const regex_telephone_number = new RegExp(/((?:\+|00)[17](?: |\-)?|(?:\+|00)[1-9]\d{0,2}(?: |\-)?|(?:\+|00)1\-\d{3}(?: |\-)?)?(0\d|\([0-9]{3}\)|[1-9]{0,3})(?:((?: |\-)[0-9]{2}){4}|((?:[0-9]{2}){4})|((?: |\-)[0-9]{3}(?: |\-)[0-9]{4})|([0-9]{7}))/);
 	if ((complete_telephone_number == "") || (complete_telephone_number == "undefined") || (!regex_telephone_number.test(complete_telephone_number))) {
 		check=false;
 		if ((telephone_number == "") || (telephone_number == "undefined")) {
