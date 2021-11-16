@@ -119,7 +119,7 @@ function checkTelephoneNumber() {
 	const regex_telephone_number = new RegExp(/((?:\+|00)[17](?: |\-)?|(?:\+|00)[1-9]\d{0,2}(?: |\-)?|(?:\+|00)1\-\d{3}(?: |\-)?)?(0\d|\([0-9]{3}\)|[1-9]{0,3})(?:((?: |\-)[0-9]{2}){4}|((?:[0-9]{2}){4})|((?: |\-)[0-9]{3}(?: |\-)[0-9]{4})|([0-9]{7}))/);
 	if ((complete_telephone_number == "") || (complete_telephone_number == "undefined") || (!regex_telephone_number.test(complete_telephone_number))) {
 		check=false;
-		if ((telephone_number == "") || (telephone_number == "undefined")) {
+		if ((complete_telephone_number == "") || (complete_telephone_number == "undefined")) {
 			document.getElementById("error_telephone_number").innerHTML = "Il numero di telefono risulta essere vuoto.";
 		} else {
 			document.getElementById("error_telephone_number").innerHTML = "Il numero di telefono non risulta essere valido (Formato: +39 1234567890).";
